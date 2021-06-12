@@ -19,12 +19,13 @@
              <div>
                  <label>Nome</label>
                  <input type="text" maxlength="15"name="nome" id="nome" >
-             </div>
+             </div><br>
 
              <div>
                 <Label>email</Label>
                 <input type="email" nome="email" id="email">
-            </div> 
+            </div><br>
+             
              <div>
                  <label>Data de nascimento</label>
                 <input type="date" name="nascimento">
@@ -35,12 +36,21 @@
                     <input type="radio" name="sex" volue="Masculino" checked>Masculino
 	                <input type="radio" name="sex" volue="Feminino">Feminino
                 </label>
+                <div>
+                    <label>Estado civil</label>
+                    <select name="estado_civil" class="form-control" id="inputEstadoCivil">
+                        <option value="0">Solteiro</option>
+                        <option value="1">Casado</option>
+                        <option value="2">Outros</option>
+                    </select>
+                </div>
 
             </div>
             </form>
 
              </div>
         </fieldset>
+
 
        
     </form>
