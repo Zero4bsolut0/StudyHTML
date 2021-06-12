@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="formulario.css">
+    <title>Cadastro</title>
+</head>
+
+<body>
+
+    <div class="campo">
+        <h1 id="titulo">Cadastro Informativo do Operador</h1>
+        <p id="subtitulo">Complete suas Informações</p>
+        <br>
+    </div>
+
+    <form>
+        <fieldset class="grupo">
+            <div class="campo">
+                <label for="nome"><strong>Nome</strong></label>
+                <input type="text" nome="nome" id="nome" required>
+            </div>
+
+            <div class="campo">
+                <label for="sobrenome"><strong>Sobrenome</strong></label>
+                <input type="text" name="sobrenome" id="sobrenome" required>
+            </div>
+        </fieldset>
+
+        <fieldset class="grupo">
+            <div class="campo">
+                <label for="idade"><strong>Idade</strong></label>
+                <input type="text" name="Idade" id="Idade" required>
+            </div>
+
+            <div class="campo">
+                <label for="Tell/Cell"><strong>Tell/Cell</strong></label>
+                <input type="text" name="Tell_Cell" id="Tell_Cell" required>
+            </div>
+        </fieldset>
+
+        <div class="campo">
+            <label for="Sexo"><strong>Sexo</strong></label>
+            <select id="Sexo">
+                <option selected disabled value="">Selecione</option>
+                <option>Masculino</option>
+                <option>Feminino</option>
+            </select>
+        </div>
+
+        <br>
+
+        <div class="campo">
+            <label><strong>E-mail</strong></label>
+            <input type="email" nome="email" id="email" required><br><br>
+        </div>
+        <label><strong>Qual Modalidade deseja participar</strong></label>
+        <label>
+            <input type="radio" nome="modalidade" volume="milsimairsoft" checked>Milsim Airsoft
+        </label>
+        <label>
+            <input type="radio" name="modalidade" volune="speedairsoft">Speed Airsof
+        </label>
+        <label>
+            <input type="radio" nome="modalidade" volume="ambos">Ambos
+        </label>
+
+        <br><br>
+
+        <div id="check">
+
+            <label><strong>Escolha o Campo para jogar</strong></label><br><br>
+            <input type="checkbox" id="Campo1" volue="Campo Aberto">
+            <label for="Campo1">Campo Aberto</label>
+            <input type="checkbox" id="Campo2" volue="CQB">
+            <label for="Campo2">CQB</label>
+            <input type="checkbox" id="Campo3" volue="Ambos">
+            <label for="Campo3">Ambos</label><br><br>
+        </div>
+        <fieldset class="grupo">
+            <h1>Selecione o FPS de sua Gun referente ao moledo informado</h1>
+
+            <p><strong>Lista para Fps permitido em nossos Jogos</strong></p>
+            <br>
+            <select name="FpsModelos" multiple>
+                <option value="Eletrico380FPS">Eletrico 380FPS</option>
+                <option value="Eletrico480FPS">Eletrico 480FPS</option>
+                <option value="Gbb380FPS">Gbb 380FPS</option>
+                <option value="Gbb480FPS">Gbb 480FPS</option>
+            </select>
+            <br><br>
+            <p>Precione Ctrl (windows) ou Command (Mac) Botão para solecionar multiplas opções.</p>
+            <p>Lembrando que caso nãos seja confirmado sua opção antes do jogo será impedido de participar.</p>
+        </fieldset>
+    </form>
+
+    <div class="campo">
+        <br>
+        <label><strong>Descreva sua Equipe e estilo de jogabilidade:</strong></label>
+        <textarea row="6" style="width: 26em" id="descreva" nome="descreva"></textarea>
+        <br><br>
+        <button class="botao">Concluído</button>
+    </div>
+
+</body>
+
+</html>
